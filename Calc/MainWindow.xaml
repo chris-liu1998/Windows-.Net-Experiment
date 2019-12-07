@@ -1,0 +1,121 @@
+﻿<Window x:Class="Calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calc"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="525.2" Width="434.749" ResizeMode="NoResize">
+    <Grid Margin="0,0,-0.4,0.4">
+        <TextBox x:Name="textBox"
+            Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+            Margin="10,10,11.6,348"
+            FontWeight="Bold" FontFamily="Segoe UI Black" FontSize="72" Text="0" IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Center"
+            />
+        <Button x:Name="btnBack"
+            Style="{StaticResource MaterialDesignRaisedAccentButton}"
+            Height="Auto"
+            materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+            Margin="273,149,24.4,272" Click="btnBack_Click">
+            <materialDesign:PackIcon Kind="ArrowBackCircle" Height="45" Width="74" Foreground="#DD3E5135" />
+        </Button>
+        <Button x:Name="btnEqual"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="Auto"
+            materialDesign:ButtonAssist.CornerRadius="25"
+            Margin="273,366,24.4,26" Click="btnEqual_Click">
+            <TextBlock
+                Text="=" FontSize="36" />
+        </Button>
+        <Button x:Name="btnOne"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="28,149,334.8,277" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontWeight="Bold" FontFamily="Segoe UI Black" Click="btnOne_Click">
+            1
+        </Button>
+        <Button x:Name="btnTwo"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="107,149,255.8,277" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontFamily="Segoe UI Black" FontSize="24" FontWeight="Bold" Click="btnTwo_Click">
+            2
+        </Button>
+        <Button x:Name="btnThree"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="190,149,172.8,277" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontWeight="Bold" FontFamily="Segoe UI Black" Click="btnThree_Click">
+            3
+        </Button>
+        <Button x:Name="btnFour"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="28,229,334.8,197" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnFour_Click">
+            4
+        </Button>
+        <Button x:Name="btnFive"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="107,229,255.8,197" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnFive_Click">
+            5
+        </Button>
+        <Button x:Name="btnSix"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="190,229,172.8,197" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnSix_Click">
+            6
+        </Button>
+        <Button x:Name="btnSeven"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="28,314,334.8,112" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnSeven_Click">
+            7
+        </Button>
+        <Button x:Name="btnEight"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="107,314,255.8,112" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnEight_Click">
+            8
+        </Button>
+        <Button x:Name="btnNine"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="190,314,172.8,112" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnNine_Click">
+            9
+        </Button>
+        <Button x:Name="btnClear"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="28,400,334.8,26" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnClear_Click">
+            C
+        </Button>
+        <Button x:Name="btnZero"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="107,400,255.8,26" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnZero_Click">
+            0
+        </Button>
+        <Button x:Name="btnDot"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            Margin="190,400,172.8,26" Background="#FF00D5EA" RenderTransformOrigin="2.528,0.45" FontSize="24" FontFamily="Segoe UI Black" FontWeight="Bold" Click="btnDot_Click">
+            .
+        </Button>
+        <Button x:Name="btnPlus"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="Auto"
+            materialDesign:ButtonAssist.CornerRadius="25"
+            Margin="273,227,89.4,201.8" FontSize="11" Click="btnPlus_Click">
+            <TextBlock FontSize="24" Text="+" />
+        </Button>
+        <Button x:Name="btnMinus"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="Auto"
+            materialDesign:ButtonAssist.CornerRadius="25"
+            Margin="338,228,24.4,199.8" FontSize="11" Click="btnMinus_Click">
+            <TextBlock FontSize="24" Text="-" />
+        </Button>
+        <Button x:Name="btnMul"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="Auto"
+            materialDesign:ButtonAssist.CornerRadius="25"
+            Margin="273,298,90.4,129.8" FontSize="11" Click="btnMul_Click">
+            <TextBlock FontSize="24" Text="×" />
+        </Button>
+        <Button x:Name="btnDiv"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="Auto"
+            materialDesign:ButtonAssist.CornerRadius="25"
+            Margin="338,298,24.4,129.8" FontSize="11" Click="btnDiv_Click">
+            <TextBlock FontSize="24" Text="÷" />
+        </Button>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="357,22,0,0" VerticalAlignment="Top" Height="31" Width="39" FontWeight="Bold" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>
