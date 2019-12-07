@@ -201,6 +201,7 @@ namespace Calc
             catch (FormatException)
             {
                 MessageBox.Show(@"不允许使用多个‘.’");
+                btnClear_Click(sender, e);
             }
         }
 
@@ -220,6 +221,7 @@ namespace Calc
             catch (FormatException)
             {
                 MessageBox.Show(@"不允许使用多个‘.’");
+                btnClear_Click(sender, e);
             }
         }
 
@@ -239,6 +241,7 @@ namespace Calc
             catch (FormatException)
             {
                 MessageBox.Show(@"不允许使用多个‘.’");
+                btnClear_Click(sender, e);
             }
         }
 
@@ -258,6 +261,7 @@ namespace Calc
             catch (FormatException)
             {
                 MessageBox.Show(@"不允许使用多个‘.’");
+                btnClear_Click(sender, e);
             }
         }
 
@@ -273,6 +277,7 @@ namespace Calc
             catch (FormatException)
             {
                 MessageBox.Show(@"不允许使用多个‘.’");
+                btnClear_Click(sender, e);
             }
 
             switch (Operator)
